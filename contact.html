@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Aarav Mehta — front-end developer." />
+  <title>Contact · Mehtab Singh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">Aarav<span>.dev</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="about.html" data-page="about">About</a></li>
+          <li><a href="projects.html" data-page="projects">Projects</a></li>
+          <li><a href="contact.html" data-page="contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Contact</p>
+        <h1>Let's talk.</h1>
+        <p class="lead">Got a question, an idea, or an opportunity? Drop me a message.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <h2>Reach me</h2>
+          <p>I usually reply within a day. Prefer email? Use the details below.</p>
+          <ul class="info-list">
+            <li><span class="info-emoji">📧</span><div><strong>Email</strong><a href="mailto:aarav@example.com">aarav@example.com</a></div></li>
+            <li><span class="info-emoji">📍</span><div><strong>Location</strong><span>Bengaluru, India</span></div></li>
+            <li><span class="info-emoji">💼</span><div><strong>Status</strong><span>Open to internships</span></div></li>
+          </ul>
+          <div class="socials big">
+            <a href="#" title="GitHub">GitHub</a>
+            <a href="#" title="LinkedIn">LinkedIn</a>
+            <a href="#" title="Twitter">Twitter</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <small class="error" data-for="name"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <small class="error" data-for="email"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..." required></textarea>
+            <small class="error" data-for="message"></small>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Send message</button>
+          <p class="form-success" id="formSuccess" hidden>✅ Thanks! Your message has been sent.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Aarav Mehta · Built from scratch with HTML, CSS &amp; JavaScript.</p>
+      <div class="socials">
+        <a href="#" aria-label="GitHub" title="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn">LinkedIn</a>
+        <a href="mailto:aarav@example.com" aria-label="Email" title="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

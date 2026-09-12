@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Aarav Mehta — front-end developer, learner, and builder." />
+  <title>About · Aarav Mehta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">Aarav<span>.dev</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="about.html" data-page="about">About</a></li>
+          <li><a href="projects.html" data-page="projects">Projects</a></li>
+          <li><a href="contact.html" data-page="contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">About me</p>
+        <h1>Curious builder, always learning.</h1>
+        <p class="lead">I'm a first-year B.Tech student at Kalvium learning to build for the web — one project at a time.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          <div class="avatar-ring small"><div class="avatar">AM</div></div>
+        </div>
+        <div class="about-text reveal">
+          <h2>My story</h2>
+          <p>I started with zero coding experience and a lot of curiosity. My first webpage was a plain HTML page — but the moment it rendered in the browser, I was hooked.</p>
+          <p>Since then I've learned to structure pages with semantic HTML, style them with modern CSS layouts, and bring them to life with JavaScript. I believe the best way to learn is to build real things and ship them.</p>
+          <p>When I'm not coding, you'll find me sketching UI ideas, reading about design, or helping classmates debug their layouts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The path so far</p>
+          <h2>Journey &amp; milestones</h2>
+        </div>
+        <ol class="timeline">
+          <li class="reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <span class="tl-date">Module 1</span>
+              <h3>Structure &amp; style</h3>
+              <p>Hand-wrote my first semantic HTML page and mastered CSS layouts with Flexbox and Grid.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <span class="tl-date">Module 2</span>
+              <h3>Bringing pages alive</h3>
+              <p>Learned the DOM, events, and the Fetch API — turning static markup into real applications.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <span class="tl-date">Module 3</span>
+              <h3>Writing safer code</h3>
+              <p>Adopted TypeScript to catch bugs before they ever reach the browser.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <span class="tl-date">Modules 4–5</span>
+              <h3>Frameworks &amp; performance</h3>
+              <p>Built multi-page apps with Next.js and tuned them to score 90+ on Lighthouse.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Beyond the code</p>
+          <h2>What I value</h2>
+        </div>
+        <div class="values-grid">
+          <article class="value-card reveal"><span>🎯</span><h3>Clarity</h3><p>Clean, readable code and interfaces that just make sense.</p></article>
+          <article class="value-card reveal"><span>♿</span><h3>Accessibility</h3><p>Websites everyone can use, on any device.</p></article>
+          <article class="value-card reveal"><span>🚀</span><h3>Performance</h3><p>Fast pages that respect people's time and data.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Aarav Mehta · Built from scratch with HTML, CSS &amp; JavaScript.</p>
+      <div class="socials">
+        <a href="#" aria-label="GitHub" title="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn">LinkedIn</a>
+        <a href="mailto:aarav@example.com" aria-label="Email" title="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

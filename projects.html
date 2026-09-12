@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Aarav Mehta — apps built with HTML, CSS and JavaScript." />
+  <title>Projects · Aarav Mehta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">Aarav<span>.dev</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="about.html" data-page="about">About</a></li>
+          <li><a href="projects.html" data-page="projects">Projects</a></li>
+          <li><a href="contact.html" data-page="contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">My work</p>
+        <h1>Projects I've built.</h1>
+        <p class="lead">Each one started from an empty folder and ended live on the web.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Filter buttons (JS powered) -->
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="app">Apps</button>
+          <button class="filter-btn" data-filter="ui">UI</button>
+          <button class="filter-btn" data-filter="game">Games</button>
+        </div>
+
+        <div class="projects-grid full" id="projectGrid">
+          <article class="project-card reveal" data-category="app">
+            <div class="project-thumb thumb-1"><span>🌦️</span></div>
+            <div class="project-body">
+              <h3>SkyCast</h3>
+              <p>A weather app that fetches live data from a public API and shows a clean 5-day forecast with icons.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>Fetch API</li></ul>
+              <div class="project-links"><a href="#">Live demo</a><a href="#">Code</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="app">
+            <div class="project-thumb thumb-2"><span>🍳</span></div>
+            <div class="project-body">
+              <h3>RecipeBox</h3>
+              <p>Search thousands of recipes and view ingredients in a responsive card grid.</p>
+              <ul class="tags"><li>HTML</li><li>Grid</li><li>JS</li></ul>
+              <div class="project-links"><a href="#">Live demo</a><a href="#">Code</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="app">
+            <div class="project-thumb thumb-3"><span>✅</span></div>
+            <div class="project-body">
+              <h3>TaskFlow</h3>
+              <p>A to-do app with local storage so your tasks persist between visits.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>localStorage</li></ul>
+              <div class="project-links"><a href="#">Live demo</a><a href="#">Code</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="ui">
+            <div class="project-thumb thumb-4"><span>🎨</span></div>
+            <div class="project-body">
+              <h3>PalettePop</h3>
+              <p>A colour-palette generator with copy-to-clipboard swatches and smooth animations.</p>
+              <ul class="tags"><li>Flexbox</li><li>CSS Vars</li><li>JS</li></ul>
+              <div class="project-links"><a href="#">Live demo</a><a href="#">Code</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="game">
+            <div class="project-thumb thumb-5"><span>🎮</span></div>
+            <div class="project-body">
+              <h3>MemoryMatch</h3>
+              <p>A card-matching memory game with a timer, score, and win animation.</p>
+              <ul class="tags"><li>Grid</li><li>Events</li><li>JS</li></ul>
+              <div class="project-links"><a href="#">Live demo</a><a href="#">Code</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="ui">
+            <div class="project-thumb thumb-6"><span>💳</span></div>
+            <div class="project-body">
+              <h3>CardLayouts</h3>
+              <p>A collection of responsive pricing and profile cards built purely with CSS.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>Responsive</li></ul>
+              <div class="project-links"><a href="#">Live demo</a><a href="#">Code</a></div>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state" id="emptyState" hidden>No projects in this category yet — check back soon!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Aarav Mehta · Built from scratch with HTML, CSS &amp; JavaScript.</p>
+      <div class="socials">
+        <a href="#" aria-label="GitHub" title="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn">LinkedIn</a>
+        <a href="mailto:aarav@example.com" aria-label="Email" title="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
