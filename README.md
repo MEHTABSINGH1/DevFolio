@@ -2,9 +2,7 @@
 
 A polished multi-page developer portfolio built with **plain HTML, CSS & JavaScript** — no frameworks, no build step. Used in the **Module 1 Orientation** (Whole-Game methodology) as the finished product students will build toward.
 
-**🔗 Live site:** https://6a630473cc47020253ddc6e2--admirable-tanuki-023261.netlify.app/
-
-Persona: *Aarav Mehta — Front-End Developer* (fictional sample student).
+ 
 
 ## ✨ Features
 - **4 pages** — Home, About, Projects, Contact
