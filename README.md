@@ -13,6 +13,7 @@ A polished multi-page developer portfolio built with **plain HTML, CSS & JavaScr
 - **Contact form** with live client-side validation
 - **Accessible** — semantic HTML, skip link, ARIA labels, reduced-motion support
 - **Zero dependencies** — only Google Fonts via CDN
+**🔗 Live site:** https://6a630473cc47020253ddc6e2--admirable-tanuki-023261.netlify.app/
 
 ## 📁 Folder structure
 ```
