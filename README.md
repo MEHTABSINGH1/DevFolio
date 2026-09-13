@@ -14,8 +14,8 @@ A polished multi-page developer portfolio built with **plain HTML, CSS & JavaScr
 - **Accessible** — semantic HTML, skip link, ARIA labels, reduced-motion support
 - **Zero dependencies** — only Google Fonts via CDN
 ## Live Website
-**🔗 Live site:** https://6a630473cc47020253ddc6e2--admirable-tanuki-023261.netlify.app/
 
+https://MEHTABSINGH1.github.io/DevFolio/
 ## 📁 Folder structure
 ```
 orientation-devfolio/
