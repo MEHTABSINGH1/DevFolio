@@ -1,8 +1,11 @@
 # DevFolio — Orientation Showcase
 
 A polished multi-page developer portfolio built with **plain HTML, CSS & JavaScript** — no frameworks, no build step. Used in the **Module 1 Orientation** (Whole-Game methodology) as the finished product students will build toward.
+## Live Website
 
- 
+https://MEHTABSINGH1.github.io/DevFolio/
+
+Persona: *Aarav Mehta — Front-End Developer* (fictional sample student).
 
 ## ✨ Features
 - **4 pages** — Home, About, Projects, Contact
